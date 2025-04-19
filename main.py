@@ -6,4 +6,4 @@ moeda_destino = 'BRL'
 host = f'https://economia.awesomeapi.com.br/last/{moeda_origem}-{moeda_destino}'
 req = requests.get(host)
 
-print(req.json())
+print(req.json()[f"{moeda_origem}{moeda_destino}"]["bid"])
