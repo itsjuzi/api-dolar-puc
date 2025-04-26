@@ -40,3 +40,11 @@ jobs:
           context: .
           push: false
           tags: user/app:latest
+
+  jobs:
+      name: Discord Commits
+      uses: Sniddl/discord-commits@v1.6
+      with:
+        webhook: ${{ secrets.DS_WEBHOOK }}
+        template: "avatar-with-link"
+        include-extras: true
