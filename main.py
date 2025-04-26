@@ -9,4 +9,4 @@ req = requests.get(host)
 
 print(req.json()[f"{moeda_origem}{moeda_destino}"]["bid"])
 
-time.sleep(20)
+time.sleep(10)
